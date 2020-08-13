@@ -11,8 +11,8 @@ namespace Globomantics.Services
         private readonly List<ConferenceModel> conferences = new List<ConferenceModel>();
         public ConferenceMemoryService()
         {
-            conferences.Add(new ConferenceModel { Id=1, Name="PluralSight", Location = "NY" });
-            conferences.Add(new ConferenceModel { Id = 2, Name = "Geeks Coding", Location = "CA" });
+            conferences.Add(new ConferenceModel { Id = 1, Name= "NDC", Location = "Oslo", AttendeeTotal=2132 });
+            conferences.Add(new ConferenceModel { Id = 2, Name = "IT/DevConnections", Location = "San Francisco", AttendeeTotal=3210 });
         }
 
         public Task Add(ConferenceModel model)
